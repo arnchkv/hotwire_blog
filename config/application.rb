@@ -23,5 +23,7 @@ module HotwireBlog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.time_zone = "Asia/Kolkata"  # Set to your local time zone
+    config.active_record.default_timezone = :local  # Ensure ActiveRecord uses local time for storage
   end
 end
